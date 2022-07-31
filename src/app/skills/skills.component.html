@@ -1,0 +1,32 @@
+<div class="row mt-4">
+    <div class="col">
+      <div *ngFor="let item of _services;let indexElement=index">
+        <div class="service-card "  *ngIf="indexElement %1==0" style="
+        font-family: 'Inter', sans-serif;
+        height: 100%;">
+          <strong class="service-card-title" style=" color: black;
+          font-family: 'Inter', sans-serif;">
+            <i class="fa fa-chevron-circle-right service-icon" aria-hidden="true"></i>{{item.serviceName}}
+            <span [ngClass]="getClass()" (click)="showUserDetailsToggle()"></span>
+          </strong>
+          
+        </div>
+     <strong class="service-card-title" style="
+      font-family: 'Inter', sans-serif;
+      height: 100%;padding-left: 2px;">
+        <div [hidden]="userDetail"> 
+          <div class="skill-box" style=" background:ghostwhite;box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+          font-family :monospace;
+          text-align: center;
+          color:goldenrod;
+          ">{{item.des}}</div>
+        </div>
+      </strong>
+      
+    </div>
+
+    <br><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpGLiJaHxe3vfUC8zIfP4_5xmVCOc2nLqNfA&usqp=CAU" class="img-fluid service-image">
+
+</div>
+

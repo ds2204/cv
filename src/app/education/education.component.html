@@ -1,0 +1,23 @@
+<div class="row middle-line">
+    <div class="col ml-3" >
+     
+    <div class="col">
+      <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202101/education_1200x768.png?0q1O6yr8HkZp_9xtJOcaFuzXh5EiXifD&size=770:433" class="img-fluid float-left">
+      
+      <div *ngFor="let item of _educations">
+        <div class="resume-card" style=" width: 320px;
+        min-height: 125px;
+        height: 100%;">
+          <strong class="resume-card-title" style="color: black !important;
+          font-family: 'Inter', sans-serif;
+          min-height: 150px !important;">
+            <i class="fa fa-graduation-cap resume-icon" style="height: 100%;
+            width: 25px;
+            color:green;" aria-hidden="true"></i>{{item.college}}
+          </strong>
+          <hr style="margin:1px !important;"><small>{{item.date}}</small>
+          <p class="mb-auto">{{item.description}}</p>
+        </div>
+      </div>
+    </div>
+</div>

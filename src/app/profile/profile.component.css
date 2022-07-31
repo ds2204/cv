@@ -1,0 +1,15 @@
+.social-media{
+    margin:20px 0px 0px 0px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+   
+   
+    padding: 20px;
+}
+.profile-icon{
+    height: 40px;
+    width: 30px;
+    color:black;
+    padding: 20px;
+    text-align: center;
+}
